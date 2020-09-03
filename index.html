@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="A Reddit redesign" />
+		<title>Reddit</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/app.css" />
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="wrapper">
+				<div class="header-inner">
+					<a href="/" class="logo" aria-label="Home">
+						<img src="img/logo.svg" alt="" />
+					</a>
+					<div class="search-box">
+						<button class="btn-search" title="Search">
+							<img src="img/icon-search.svg" alt="" />
+						</button>
+						<input
+							type="text"
+							placeholder="Search"
+							aria-label="Search"
+						/>
+					</div>
+					<div class="header-actions">
+						<button
+							class="header-action badge-new"
+							title="Messages"
+						>
+							<img src="img/icon-mail.svg" alt="" />
+						</button>
+						<button
+							class="header-action badge-new"
+							title="Mentions"
+						>
+							<img src="img/icon-comment-dots.svg" alt="" />
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="wrapper">
+			<div class="main-view">
+				<aside class="sidebar">
+					<ul class="categories">
+						<li class="category">
+							<img
+								src="img/icon-home.svg"
+								alt=""
+								class="category-icon"
+							/><span class="category-name">Home</span>
+						</li>
+						<li class="category">
+							<img
+								src="img/icon-popular.svg"
+								alt=""
+								class="category-icon"
+							/><span class="category-name">Popular</span>
+						</li>
+						<li class="category">
+							<img
+								src="img/icon-all.svg"
+								alt=""
+								class="category-icon"
+							/><span class="category-name">All</span>
+						</li>
+					</ul>
+					<button class="btn-sidebar">
+						<img src="img/icon-circle.svg" alt="" />
+						rpan
+					</button>
+					<div class="favorites-channels-wrapper">
+						<h2 class="sidebar-section-headline">Favorites</h2>
+						<ul class="favorites-channels">
+							<li class="favorite">
+								<img
+									src="img/favorite1.png"
+									alt=""
+									class="channel-photo"
+								/><span class="channel-name"
+									>Science Adventure</span
+								>
+							</li>
+							<li class="favorite">
+								<img
+									src="img/favorite2.png"
+									alt=""
+									class="channel-photo"
+								/><span class="channel-name">Android</span>
+							</li>
+							<li class="favorite">
+								<img
+									src="img/favorite3.png"
+									alt=""
+									class="channel-photo"
+								/><span class="channel-name"
+									>Canadian sales for computer hardware</span
+								>
+							</li>
+							<li class="favorite selected">
+								<img
+									src="img/favorite4.png"
+									alt=""
+									class="channel-photo"
+								/><span class="channel-name">AMD</span>
+							</li>
+							<li class="favorite">
+								<img
+									src="img/favorite5.png"
+									alt=""
+									class="channel-photo"
+								/><span class="channel-name"
+									>Corridor Digital</span
+								>
+							</li>
+							<li class="favorite">
+								<img
+									src="img/favorite6.png"
+									alt=""
+									class="channel-photo"
+								/><span class="channel-name">Forza</span>
+							</li>
+							<li class="view-more">
+								<button class="btn-view-more" title="View More">
+									<img src="img/triangle.svg" alt="" />
+								</button>
+							</li>
+						</ul>
+					</div>
+				</aside>
+				<main class="feed">
+					<div class="post">
+						<div class="post-header">
+							<div class="post-meta">
+								<img
+									src="img/favorite4.png"
+									alt="AMD"
+									class="channel-photo"
+								/>
+								<p class="post-meta-text">
+									r/amd • Posted by Joe Wilson • 7 hours ago
+								</p>
+							</div>
+							<button class="btn-share" title="Share">
+								<img src="img/icon-share.svg" alt="" />
+							</button>
+						</div>
+						<div class="post-body">
+							<h4 class="post-body-title">
+								AMD 5700XT high tempratures
+							</h4>
+							<p class="post-text">
+								AMD has published a blog post discussing how
+								temperatures and thermals are calculated on its
+								Navi GPUs. There has been some concern in the
+								enthusiast community about the temperatures
+								posted by reference cards, given that these GPUs
+								can report thermal junction temps of up to 110
+								degrees Celsius.
+							</p>
+							<p class="post-text">
+								Paired with this array of sensors is the ability
+								to identify the ‘hotspot’ across the GPU die.
+								Instead of setting a conservative, ‘worst case’
+								throttling temperature for the entire die, the
+								Radeon RX 5700 series GPUs will continue to
+								opportunistically and aggressively ramp clocks
+								until any one of the many available sensors hits
+								the ‘hotspot’ or ‘Junction’ temperature of 110
+								degrees Celsius.
+							</p>
+							<a href="#" class="link"
+								>Source: https://www.extremetech.com...</a
+							>
+						</div>
+						<div class="post-footer">
+							<div class="votes-wrapper">
+								<button class="arrow-vote" title="Upvote">
+									<img src="img/arrow-up.svg" alt="" />
+								</button>
+								<span class="votes">169</span>
+								<button class="arrpow-vote" title="Downvote">
+									<img src="img/arrow-down.svg" alt="" />
+								</button>
+							</div>
+							<button
+								class="btn-comments"
+								title="Leave a comment"
+							>
+								<img src="img/icon-chatbubbles.svg" alt="" />
+								32 comments
+							</button>
+						</div>
+					</div>
+					<div class="post">
+						<div class="post-header">
+							<div class="post-meta">
+								<img
+									src="img/favorite2.png"
+									alt="AMD"
+									class="channel-photo"
+								/>
+								<p class="post-meta-text">
+									r/android • Posted by Hanna Wallock • 3
+									hours ago
+								</p>
+							</div>
+							<button class="btn-share" title="Share">
+								<img src="img/icon-share.svg" alt="" />
+							</button>
+						</div>
+						<div class="post-body">
+							<h4 class="post-body-title">
+								Android 11 - all the exciting new features!
+							</h4>
+							<a href="#" class="link">youtube.com/watch?...</a>
+							<img
+								src="img/post-media1.png"
+								alt="Youtube video thumbnail"
+								class="post-media"
+							/>
+						</div>
+						<div class="post-footer">
+							<div class="votes-wrapper">
+								<button class="arrow-vote" title="Upvote">
+									<img src="img/arrow-up.svg" alt="" />
+								</button>
+								<span class="votes">169</span>
+								<button class="arrpow-vote" title="Downvote">
+									<img src="img/arrow-down.svg" alt="" />
+								</button>
+							</div>
+							<button
+								class="btn-comments"
+								title="Leave a comment"
+							>
+								<img src="img/icon-chatbubbles.svg" alt="" />
+								32 comments
+							</button>
+						</div>
+					</div>
+					<div class="post post-featured">
+						<div class="post-header">
+							<div class="post-meta">
+								<img
+									src="img/favorite6.png"
+									alt="Forza"
+									class="channel-photo"
+								/>
+								<p class="post-meta-text">
+									r/forza • Posted by Tony Gunk • 6 hours ago
+								</p>
+							</div>
+							<button class="btn-share" title="Share">
+								<img src="img/icon-share.svg" alt="" />
+							</button>
+						</div>
+						<div class="post-body">
+							<h4 class="post-body-title">
+								Sick pic of my new car!
+							</h4>
+							<img
+								src="img/post-media2.png"
+								alt="Youtube video thumbnail"
+								class="post-media"
+							/>
+							<p class="post-text">
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Facere asperiores odit odio
+								nemo ipsa, a modi doloremque dignissimos quos
+								provident ea autem neque quam. Incidunt!
+							</p>
+							<p class="post-text">
+								Lorem ipsum dolor sit amet, consectetur
+								adipisicing elit. Asperiores est tenetur, odio
+								libero labore eveniet voluptatem perspiciatis
+								facere?
+							</p>
+						</div>
+						<div class="post-footer">
+							<div class="votes-wrapper">
+								<button class="arrow-vote" title="Upvote">
+									<img src="img/arrow-up.svg" alt="" />
+								</button>
+								<span class="votes">169</span>
+								<button class="arrpow-vote" title="Downvote">
+									<img src="img/arrow-down.svg" alt="" />
+								</button>
+							</div>
+							<button
+								class="btn-comments"
+								title="Leave a comment"
+							>
+								<img src="img/icon-chatbubbles.svg" alt="" />
+								32 comments
+							</button>
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+		<button class="fab" title="Create a post">
+			<img src="img/icon-edit.svg" alt="" />
+		</button>
+	</body>
+</html>
